@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --coloer-hover: #272727;
+
+    --fuente-monserrat: "Montserrat", sans serif;
+    --fuente-Krona: "Krona One", sans serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header_nav{
+    display: flex;
+    gap: 80px;
+
+}
+
+.header_nav_link{
+    color: var(--color-terciario);
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.titulo-destaque{
+    color: var(--color-terciario);
+    }
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2.25rem;
+    font-family: var(--fuente-Krona);
+}
+
+.presentacion_contenido_text{
+    font-size: 1.5rem;
+    font-family: var(--fuente-monserrat);
+}
+
+.presentacion_enlace {
+    display: flex;
+    justify-content: space-between;   
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_enlace_subtitulo{
+    font-family: var(--fuente-Krona);
+    font-size:1.5rem;
+    font-weight: 400;
+    align-items: center;
+}
+
+
+.presentacion_enlace_link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-terciario);
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-monserrat);
+}
+
+.presentacion_enlace_link:hover{
+    background:var(--color-hover);
+}
+
+
+.AnaGarcia{
+    width: 50%;    /* Ajusta el tamaño deseado */
+}
+
+.footer{
+    background-color:var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px){
+
+    .header{
+        padding:10%;
+    }
+
+    .header_nav{
+        justify-content: center;
+    }
+   
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+        gap: 80px
+    }
+      
+    .presentacion_contenido{
+        width: auto;
+    }
+
+    .presentacion_contenido_titulo{
+        font-size: 1.5rem;
+    }
+
+    .presentacion_contenido_text{
+        font-size: 1rem;
+    }
+
+    .presentacion_enlace_subtitulo{
+        font-size: 1.1rem;
+    }
+
+    .presentacion_enlace_link{
+        font-size: 1rem;
+    }
+}
+/* Esto es un comentario, es para recordar como se hace los comentarios, de ESTÁ forma es para HTML */
