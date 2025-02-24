@@ -10,6 +10,10 @@
     --fuente-Krona: "Krona One", sans serif;
 }
 
+html{
+    font-size: 16px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -23,7 +27,7 @@ body{
 }
 
 .header{
-    padding: 2% 0% 0% 15%;
+    padding: 4% 0% 0% 8%;
 
 }
 
@@ -48,9 +52,10 @@ body{
 
 .presentacion {
     display: flex;
-    align-items: center;
-    padding: 5% 15%;
+    align-items: flex-start;
+    padding: 5% 8%;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion_contenido{
@@ -63,11 +68,13 @@ body{
 .presentacion_contenido_titulo{
     font-size: 2.25rem;
     font-family: var(--fuente-Krona);
+    font-weight: 400;
 }
 
 .presentacion_contenido_text{
     font-size: 1.5rem;
     font-family: var(--fuente-monserrat);
+    font-weight: 400;
 }
 
 .presentacion_enlace {
