@@ -98,7 +98,7 @@ body{
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--color-terciario);
-    width: 50%;
+    width: 378px;
     text-align: center;
     align-items: center;
     border-radius: 8px;
@@ -116,7 +116,7 @@ body{
 
 
 .AnaGarcia{
-    width: 50%;    /* Ajusta el tamaño deseado */
+    width: 488px;    /* Ajusta el tamaño deseado */
 }
 
 .footer{
@@ -132,19 +132,37 @@ body{
 @media (max-width: 1200px){
 
     .header{
-        padding:10%;
+        width: 100%;
+                    
     }
 
     .header_nav{
+        display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        min-height: 60px;
+        padding-right: 15%;
+        padding-top: 10%;
+        
     }
    
+    .header_nav_link{
+        font-size: 80%;
+        
+    }
+
     .presentacion {
         flex-direction: column-reverse;
         padding: 5%;
-        gap: 80px
+        gap: 80px;
+        align-items: center;
     }
-      
+    
+    .AnaGarcia{
+        width: 70%;
+    }
+
     .presentacion_contenido{
         width: auto;
     }
@@ -157,12 +175,19 @@ body{
         font-size: 1rem;
     }
 
+    .presentacion_enlace{
+        gap: 16px;
+    }
+
     .presentacion_enlace_subtitulo{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .presentacion_enlace_link{
         font-size: 1rem;
+        width: 60%;
+        height: 10px;
+        
     }
 }
 /* Esto es un comentario, es para recordar como se hace los comentarios, de ESTÁ forma es para HTML */
